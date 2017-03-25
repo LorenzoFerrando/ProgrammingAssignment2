@@ -7,8 +7,7 @@
 ##      getinverse --> read the inverted matrix
 
 
-## cacheSolve reads the stored matrix or, if the stored inverted matrix is not
-## avalaible, it computes it.
+
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -25,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
              getinverse = getinverse)
 }
 
-
+## cacheSolve reads the stored matrix or, if the stored inverted matrix is not
+## avalaible, it computes it.
 
 cacheSolve <- function(x, ...) {
         inv <- x$getinverse()
